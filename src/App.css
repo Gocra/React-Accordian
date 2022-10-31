@@ -1,0 +1,16 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+  padding-top: 5vh;
+  font-size: 14px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}

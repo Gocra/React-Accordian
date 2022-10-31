@@ -1,0 +1,49 @@
+.accordian{
+    width: 90vw;
+    max-width: 500px;
+}
+
+.accordian .heading{
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.accordian .item{
+    border-top: 1px solid rgb(225, 225, 225);
+}
+
+.accordian .item:last-child{
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.accordian .item .title{
+    padding: 0.75rem 0;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordian .item .title .icon{
+    width: 11px;
+    transform: rotateZ(0deg);
+}
+
+.accordian .item .title .icon.show{
+    transform: rotateZ(-180deg);
+}
+
+.accordian .item .container{
+    overflow: hidden;
+    max-height: 0;
+}
+
+.accordian .item .container.show{
+    height: auto;
+    max-height: 9999px;
+}
+
+.accordian .item .container .content{
+    padding: 0 0.75rem 1rem 0.75rem;
+}
